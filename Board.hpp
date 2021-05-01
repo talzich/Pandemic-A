@@ -8,7 +8,12 @@ namespace pandemic{
 
         public:
             Board();
+            
             ~Board();
+            
+            int operator[](const City &city){};
+
+            friend ostream& operator<<(ostream &out, const Board &board);
 
             void read_cities();
     };
