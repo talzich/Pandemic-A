@@ -23,7 +23,7 @@ namespace pandemic{
 
             void treat(const City &city);
 
-            void role();
+            string role();
 
             void take_card(const City &city);
     };
