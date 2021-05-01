@@ -2,6 +2,10 @@
 // AUTHOR: Tal Zichlinsky
 // Header file for class GeneSplicer
 
+#include "Player.hpp"
+#include "Color.hpp"
+
+
 namespace pandemic{
     class GeneSplicer: public Player{
         
