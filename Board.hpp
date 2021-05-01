@@ -16,5 +16,7 @@ namespace pandemic{
             friend std::ostream& operator<<(std::ostream &out, const Board &board);
 
             void read_cities();
+
+            bool is_clean();
     };
 }

@@ -5,8 +5,11 @@
 #include "Player.hpp"
 
 namespace pandemic{
+    
     class Medic: public Player{
         public:
+
+            using Player::Player;
         
             // Overloading methods from Player
             void drive(const City &city);

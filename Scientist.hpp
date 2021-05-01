@@ -9,7 +9,9 @@ namespace pandemic{
         public:
 
             using Player::Player;
-            
+
+            Scientist(const Board &board, const City &city, int n);
+
             // Overloading method from Player
             void doscover_cure(const Color &color);
     };

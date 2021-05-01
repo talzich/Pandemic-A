@@ -12,22 +12,22 @@ namespace pandemic{
             // Destructor
             ~Player();
 
-            void drive(const City &city);
+            Player &drive(const City &city);
 
-            void fly_direct(const City &city);
+            Player &fly_direct(const City &city);
 
-            void fly_charter(const City &city);
+            Player &fly_charter(const City &city);
 
-            void fly_shuttle(const City &city);
+            Player &fly_shuttle(const City &city);
 
-            void build();
+            Player &build();
 
-            void discover_cure(const Color &color);
+            Player &discover_cure(const Color &color);
 
-            void treat(const City &city);
+            Player &treat(const City &city);
 
             string role();
 
-            void take_card(const City &city);
+            Player &take_card(const City &city);
     };
 }
