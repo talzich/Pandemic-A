@@ -11,6 +11,6 @@ namespace pandemic{
             using Player::Player;
 
             // Overloading method from Player
-            void build();
+            Player &build();
     };
 }
