@@ -1,7 +1,8 @@
 // 
 // AUTHOR: Tal Zichlinsky
+#pragma once
 
 namespace pandemic
 {
-    enum Color {Red, Yellow, Black, Blue} ;
+    enum class Color {Red, Yellow, Black, Blue} ;
 }

@@ -3,7 +3,6 @@
 // Header file for class Medic
 
 #include "Player.hpp"
-#include "City.hpp"
 
 namespace pandemic{
     

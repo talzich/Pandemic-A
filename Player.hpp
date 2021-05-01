@@ -1,6 +1,13 @@
 //
 // AUTHOR: Tal Zichlinsky
 // Header file for class player
+#pragma once
+
+#include "Color.hpp"
+#include "Board.hpp"
+#include "City.hpp"
+
+#include <string>
 
 namespace pandemic{
     class Player{
@@ -27,7 +34,7 @@ namespace pandemic{
 
             Player &treat(const City &city);
 
-            string role();
+            std::string role();
 
             Player &take_card(const City &city);
     };

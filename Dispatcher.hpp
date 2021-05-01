@@ -3,7 +3,6 @@
 // Header file for class Dispatcher
 
 #include "Player.hpp"
-#include "City.hpp"
 
 namespace pandemic{
     class Dispatcher: public Player{

@@ -1,6 +1,7 @@
 //
 // AUTHOR: Tal Zichlinsky
 // Header file for class City
+#pragma once
 
 namespace pandemic{
 

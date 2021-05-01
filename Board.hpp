@@ -1,6 +1,9 @@
 //
 // AUTHOR: Tal Zichlinsky
 // Header file for class Board
+#pragma once
+
+#include <iostream>
 
 #include "City.hpp"
 

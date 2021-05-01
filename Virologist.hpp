@@ -2,7 +2,6 @@
 // AUTHOR: Tal Zichlinsky
 // Header file for class Virologist
 
-#include "City.hpp"
 #include "Player.hpp"
 
 namespace pandemic{

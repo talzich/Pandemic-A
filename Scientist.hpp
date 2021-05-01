@@ -2,9 +2,6 @@
 // AUTHOR: Tal Zichlinsky
 // Header file for class Scientist
 
-#include "Color.hpp"
-#include "City.hpp"
-#include "Board.hpp"
 #include "Player.hpp"
 
 namespace pandemic{

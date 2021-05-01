@@ -3,7 +3,6 @@
 // Header file for class Researcher
 
 #include "Player.hpp"
-#include "Color.hpp"
 
 namespace pandemic{
     class Researcher: public Player{

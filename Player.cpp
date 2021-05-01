@@ -4,9 +4,7 @@
 
 #include <iostream>
 
-#include "Color.hpp"
-#include "Board.hpp"
-#include "City.hpp"
+
 #include "Player.hpp"
 
 using namespace std;
@@ -32,7 +30,7 @@ namespace pandemic{
 
     Player& Player::treat(const City &city){ return *this; }
 
-    string Player::role(){}
+    string Player::role(){ return "role"; }
     
-    Player& Player::drive(const City &city){ return *this; }
+    Player& Player::take_card(const City &city){ return *this; }
 }

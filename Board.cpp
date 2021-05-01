@@ -15,10 +15,10 @@ namespace pandemic{
     Board::~Board(){}
 
     int& Board::operator[](const City &city){ 
-        int x;
-        return x;
+        int *x = new int(0);
+        return *x;
     }
-
+    
     ostream &operator<<(ostream &out, const Board &board){ return out; }
 
     void Board::read_cities(){}
