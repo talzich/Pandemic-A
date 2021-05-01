@@ -8,6 +8,8 @@ namespace pandemic{
     class Dispatcher: public Player{
         public:
 
+            using Player::Player;
+            
             // Overloading method from Player
             void fly_direct(const City city);
     };

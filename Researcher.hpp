@@ -8,6 +8,8 @@ namespace pandemic{
     class Researcher: public Player{
         public:
         
+            using Player::Player;
+            
             // Overloading method from Player
             void discover_cure(const Color &color);
     };

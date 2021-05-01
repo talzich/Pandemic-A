@@ -7,7 +7,9 @@
 namespace pandemic{
     class OperationsExpert: public Player{
         public:
-        
+
+            using Player::Player;
+
             // Overloading method from Player
             void build();
     };

@@ -6,7 +6,10 @@ namespace pandemic{
     class Player{
 
         public:
+            // Constructor 
             Player(const Board &board, const City &city);
+
+            // Destructor
             ~Player();
 
             void drive(const City &city);
