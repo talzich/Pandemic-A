@@ -11,7 +11,7 @@ namespace pandemic{
             
             ~Board();
             
-            int operator[](const City &city){};
+            int operator[](const City &city);
 
             friend ostream& operator<<(ostream &out, const Board &board);
 
