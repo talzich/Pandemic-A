@@ -8,6 +8,7 @@ namespace pandemic{
         public:
             // Constructor 
             Player(const Board &board, const City &city);
+            Player();
 
             // Destructor
             ~Player();

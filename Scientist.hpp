@@ -2,6 +2,9 @@
 // AUTHOR: Tal Zichlinsky
 // Header file for class Scientist
 
+#include "Color.hpp"
+#include "City.hpp"
+#include "Board.hpp"
 #include "Player.hpp"
 
 namespace pandemic{
@@ -13,6 +16,6 @@ namespace pandemic{
             Scientist(const Board &board, const City &city, int n);
 
             // Overloading method from Player
-            void doscover_cure(const Color &color);
+            Player &discover_cure(const Color &color);
     };
 }

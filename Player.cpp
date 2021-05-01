@@ -15,6 +15,7 @@ namespace pandemic{
 
     // ctor & dtor
     Player::Player(const Board &board, const City &city){}
+    Player::Player(){}
     Player::~Player(){}
 
     Player& Player::drive(const City &city){ return *this; }
