@@ -3,6 +3,7 @@
 // Header file for class Dispatcher
 
 #include "Player.hpp"
+#include "City.hpp"
 
 namespace pandemic{
     class Dispatcher: public Player{
@@ -11,6 +12,6 @@ namespace pandemic{
             using Player::Player;
             
             // Overloading method from Player
-            void fly_direct(const City city);
+            Player &fly_direct(const City city);
     };
 }
