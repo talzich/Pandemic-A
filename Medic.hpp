@@ -3,6 +3,7 @@
 // Header file for class Medic
 
 #include "Player.hpp"
+#include "City.hpp"
 
 namespace pandemic{
     
@@ -12,15 +13,15 @@ namespace pandemic{
             using Player::Player;
         
             // Overloading methods from Player
-            void drive(const City &city);
+            Player &drive(const City &city);
 
-            void fly_direct(const City &city);
+            Player &fly_direct(const City &city);
 
-            void fly_charter(const City &city);
+            Player &fly_charter(const City &city);
 
-            void fly_shuttle(const City &city);
+            Player &fly_shuttle(const City &city);
 
-            void treat(const City &city);
+            Player &treat(const City &city);
 
     };
 }
