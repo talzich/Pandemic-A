@@ -3,5 +3,5 @@
 
 namespace pandemic
 {
-    enum Color {red, yellow, black, red} ;
+    enum Color {Red, Yellow, Black, Blue} ;
 }
