@@ -34,7 +34,7 @@ namespace pandemic{
     
     Player& Player::take_card(const City &city){ return *this; }
 
-    City& Player::get_city(){ return this->city; } 
+    City& Player::get_city(){ return this->_city; } 
 
-    int Player::num_of_cards(){};
+    int Player::num_of_cards(){ return 0; };
 }

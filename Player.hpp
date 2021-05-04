@@ -12,8 +12,8 @@
 namespace pandemic{
     class Player{
 
-        City city;
-        string role;
+        City _city;
+        std::string _role;
 
         public:
             // Constructor 
