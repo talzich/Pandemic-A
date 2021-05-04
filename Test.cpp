@@ -67,10 +67,18 @@ TEST_CASE("Fly Direct"){
     int viro_cards = viro.num_of_cards();
 
     op_exp.build();
+
     disp.fly_direct(City::Baghdad);
+    CHECK(disp.get_city() == City::Baghdad);
+
     gene_splcr.fly_direct(City::Baghdad);
+    CHECK(gene_splcr.get_city() == City::Baghdad);
+
     medic.fly_direct(City::Baghdad);
+    CHECK(medic.get_city() == City::Baghdad);
+    
     viro.fly_direct(City::Baghdad);
+    CHECK(viro.get_city() == City::Baghdad);
 
     CHECK_EQ(disp_cards, disp.num_of_cards());
     CHECK_EQ(gene_cards - 1, gene_splcr.num_of_cards());
@@ -79,3 +87,4 @@ TEST_CASE("Fly Direct"){
 
     CHECK_THROWS(op_exp.fly_direct(City::Baghdad));
 }
+
