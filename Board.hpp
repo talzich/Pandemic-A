@@ -23,5 +23,7 @@ namespace pandemic{
             void read_cities();
 
             bool is_clean();
+
+            void remove_cures();
     };
 }

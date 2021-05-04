@@ -24,4 +24,6 @@ namespace pandemic{
     void Board::read_cities(){}
 
     bool Board::is_clean(){ return false; }
+
+    void Board::remove_cures(){}
 }
