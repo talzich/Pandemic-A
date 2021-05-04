@@ -12,6 +12,9 @@
 namespace pandemic{
     class Player{
 
+        City city;
+        string role;
+
         public:
             // Constructor 
             Player(const Board &board, const City &city);
@@ -37,5 +40,9 @@ namespace pandemic{
             std::string role();
 
             Player &take_card(const City &city);
+
+            City &get_city();
+
+            int num_of_cards();
     };
 }

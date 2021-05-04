@@ -33,4 +33,8 @@ namespace pandemic{
     string Player::role(){ return "role"; }
     
     Player& Player::take_card(const City &city){ return *this; }
+
+    City& Player::get_city(){ return this->city; } 
+
+    int Player::num_of_cards(){};
 }
