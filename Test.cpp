@@ -88,3 +88,50 @@ TEST_CASE("Fly Direct"){
     CHECK_THROWS(op_exp.fly_direct(City::Baghdad));
 }
 
+TEST_CASE("Fly Shuttle"){
+    // Flights cannot be made without cards and without research stations built in both cities
+    
+    Board b{};
+    OperationsExpert op_exp{b, City::Atlanta};
+    Dispatcher disp{b, City::Atlanta};
+    GeneSplicer gene_splcr{b, City::Atlanta};
+    Medic medic{b, City::Atlanta};
+    Virologist viro{b, City::Atlanta};
+
+    CHECK_THROWS(op_exp.fly_shuttle(City::Baghdad));
+    CHECK_THROWS(disp.fly_shuttle(City::Baghdad));
+    CHECK_THROWS(gene_splcr.fly_shuttle(City::Baghdad));
+    CHECK_THROWS(medic.fly_shuttle(City::Baghdad));
+    CHECK_THROWS(viro.fly_shuttle(City::Baghdad));
+
+    // Operations expert now builds a research station in Atlanta, flies to Baghdad and builds one there too. 
+    // Shuttle flights from Atlanta to Baghdad (and vice versa) should now be available
+    op_exp.build();
+    op_exp.take_card(City::Baghdad);
+    op_exp.fly_direct(City::Baghdad);
+    op_exp.build();
+
+    CHECK_NOTHROW(disp.fly_shuttle(City::Baghdad));
+    CHECK(disp.get_city() == City::Baghdad);
+
+    CHECK_NOTHROW(gene_splcr.fly_shuttle(City::Baghdad));
+    CHECK(gene_splcr.get_city() == City::Baghdad);
+
+    CHECK_NOTHROW(medic.fly_shuttle(City::Baghdad));
+    CHECK(medic.get_city() == City::Baghdad);
+    
+    CHECK_NOTHROW(viro.fly_shuttle(City::Baghdad));
+    CHECK(viro.get_city() == City::Baghdad);
+
+    CHECK_NOTHROW(disp.fly_shuttle(City::Atlanta));
+    CHECK(disp.get_city() == City::Atlanta);
+
+    CHECK_NOTHROW(gene_splcr.fly_shuttle(City::Atlanta));
+    CHECK(gene_splcr.get_city() == City::Atlanta);
+
+    CHECK_NOTHROW(medic.fly_shuttle(City::Atlanta));
+    CHECK(medic.get_city() == City::Atlanta);
+    
+    CHECK_NOTHROW(viro.fly_shuttle(City::Atlanta));
+    CHECK(viro.get_city() == City::Atlanta);
+}
